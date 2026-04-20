@@ -1,3 +1,4 @@
+--- index.html (原始)
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -37,6 +38,58 @@
     <footer>
         <p>Desenvolvido com ❤️ | História de Portugal</p>
     </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
++++ index.html (修改后)
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline da História de Portugal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Carrossel de Eventos -->
+    <div class="carousel-container">
+        <div id="carouselTrack" class="carousel-track">
+            <!-- Slides gerados via JavaScript -->
+        </div>
+
+        <!-- Botões de Navegação -->
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Evento anterior">
+            <svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Próximo evento">
+            <svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+    </div>
+
+    <!-- Painel de Informações -->
+    <div class="info-panel">
+        <div class="info-content">
+            <div class="year-badge" id="eventYear"></div>
+            <h1 id="eventTitle"></h1>
+            <p id="eventDescription"></p>
+            <div class="event-tags" id="eventTags"></div>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="indicators">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="counter" id="counter"></div>
+        </div>
+    </div>
+
+    <!-- Instruções -->
+    <div class="instructions">
+        <span>👆 Use as setas ou swipe • ⌨️ Teclado → ←</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
