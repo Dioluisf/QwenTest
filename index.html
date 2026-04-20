@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline da História de Portugal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🇵🇹 Timeline da História de Portugal</h1>
+        <p class="subtitle">Uma jornada através dos séculos de história portuguesa</p>
+    </header>
+
+    <div class="timeline-container">
+        <div class="timeline-controls">
+            <button id="prevBtn" onclick="previousEvent()">◀ Anterior</button>
+            <span id="currentPeriod"></span>
+            <button id="nextBtn" onclick="nextEvent()">Próximo ▶</button>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div id="eventsContainer"></div>
+        </div>
+
+        <div class="event-detail" id="eventDetail">
+            <h2 id="eventTitle"></h2>
+            <div class="event-year" id="eventYear"></div>
+            <p id="eventDescription"></p>
+            <div class="event-tags" id="eventTags"></div>
+        </div>
+
+        <div class="navigation-dots" id="navigationDots"></div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido com ❤️ | História de Portugal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
